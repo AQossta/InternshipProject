@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".english.EnglishFragment">
+
+    <include
+        android:id="@+id/toolbar_english"
+        layout="@layout/toolbar_back_english"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/txt_categories"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_english">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Категории"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginHorizontal="16dp"
+            android:fontFamily="@font/ss_bold_700"
+            android:textSize="22dp"
+            android:textColor="@color/very_dark_teal_blue"/>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tv_choose_category"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_categories"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_vocabulary"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:orientation="vertical"
+            android:background="@drawable/background_button_8dp_circle"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageButton
+                android:id="@+id/btn_img_vocabulary"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginVertical="14.5dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/img_vocabulary"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Пополни словарный запас"
+                android:textSize="16dp"
+                android:textColor="@color/very_dark_teal_blue"
+                android:fontFamily="@font/ss_bold_700"
+                android:layout_marginVertical="24.5dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginStart="12dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn_img_vocabulary"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_fairy_tales"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:orientation="vertical"
+            android:background="@drawable/background_button_8dp_circle"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_vocabulary">
+
+            <ImageButton
+                android:id="@+id/btn_img_fairy_tales"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginVertical="14.5dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/img_fairy_tales"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/txt_fairy_tales"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Сказки"
+                android:textSize="16dp"
+                android:textColor="@color/very_dark_teal_blue"
+                android:fontFamily="@font/ss_bold_700"
+                android:layout_marginVertical="24.5dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginStart="12dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn_img_fairy_tales"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_grammar"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:orientation="vertical"
+            android:background="@drawable/background_button_8dp_circle"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_fairy_tales">
+
+            <ImageButton
+                android:id="@+id/btn_img_grammar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginVertical="14.5dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/img_grammar"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/txt_grammar"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Грамматика"
+                android:textSize="16dp"
+                android:textColor="@color/very_dark_teal_blue"
+                android:fontFamily="@font/ss_bold_700"
+                android:layout_marginVertical="24.5dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginStart="12dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn_img_grammar"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btn_other"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:orientation="vertical"
+            android:background="@drawable/background_button_8dp_circle"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_grammar">
+
+            <ImageButton
+                android:id="@+id/btn_img_other"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginVertical="14.5dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/img_other"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/txt_other"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Прочее"
+                android:textSize="16dp"
+                android:textColor="@color/very_dark_teal_blue"
+                android:fontFamily="@font/ss_bold_700"
+                android:layout_marginVertical="24.5dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginStart="12dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn_img_other"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

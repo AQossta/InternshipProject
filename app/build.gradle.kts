@@ -58,4 +58,7 @@ dependencies {
 
     // Для Safe Args (опционально — переходы с аргументами)
     implementation("androidx.navigation:navigation-safe-args-gradle-plugin:2.9.0")
+
+    implementation ("de.hdodenhof:circleimageview:3.1.0")
+
 }

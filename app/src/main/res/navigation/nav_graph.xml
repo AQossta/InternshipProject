@@ -7,12 +7,37 @@
 
     <fragment
         android:id="@+id/signUpFragment"
-        android:name="com.example.internshipproject.SignUpFragment"
+        android:name="com.example.internshipproject.signup.SignUpFragment"
         android:label="fragment_sign_up"
         tools:layout="@layout/fragment_sign_up" />
     <fragment
         android:id="@+id/signInFragment"
-        android:name="com.example.internshipproject.SignInFragment"
+        android:name="com.example.internshipproject.signin.SignInFragment"
         android:label="SignInFragment"
         tools:layout="@layout/fragment_sign_in" />
+    <fragment
+        android:id="@+id/englishFragment"
+        android:name="com.example.internshipproject.english.EnglishFragment"
+        android:label="fragment_english"
+        tools:layout="@layout/fragment_english" />
+    <fragment
+        android:id="@+id/libraryFragment"
+        android:name="com.example.internshipproject.library.LibraryFragment"
+        android:label="fragment_library"
+        tools:layout="@layout/fragment_library" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.internshipproject.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.internshipproject.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/questsFragment"
+        android:name="com.example.internshipproject.quests.QuestsFragment"
+        android:label="fragment_quests"
+        tools:layout="@layout/fragment_quests" />
 </navigation>
